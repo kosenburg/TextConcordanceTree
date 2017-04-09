@@ -9,17 +9,18 @@ public class Main {
     public static void main(String[] args) throws IOException {
 	    String pathToFile = "C:\\Users\\Kevin\\IdeaProjects\\TextConcordanceTree\\src\\test.txt";
 
-        fillTree(pathToFile);
+        readWordsFromFile(pathToFile);
 
         tree = new BSTTree(new BinaryNode(listOfWords.poll()));
         for (String word: listOfWords) {
             tree.addToTree(word);
         }
 
-
+        //tree.outputInorderTraversal();
+        tree.outputPreorderTraversal();
     }
 
-    private static void fillTree(String pathToFile) throws IOException {
+    private static void readWordsFromFile(String pathToFile) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(pathToFile));
         listOfWords = new LinkedList<>();
 
