@@ -16,8 +16,8 @@ public class Main {
             tree.addToTree(word);
         }
 
-        //tree.outputInorderTraversal();
-        tree.outputPreorderTraversal();
+        tree.outputInorderTraversal();
+        //tree.outputPreorderTraversal();
     }
 
     private static void readWordsFromFile(String pathToFile) throws IOException {
