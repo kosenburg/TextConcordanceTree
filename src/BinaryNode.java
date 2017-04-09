@@ -35,7 +35,7 @@ public class BinaryNode {
     }
 
     public void setLeft(BinaryNode left) {
-        System.out.println("Setting the left child of " + word +" to " + left.getWord());
+     //   System.out.println("Setting the left child of " + word +" to " + left.getWord());
         this.left = left;
     }
 
@@ -44,7 +44,7 @@ public class BinaryNode {
     }
 
     public void setRight(BinaryNode right) {
-        System.out.println("Setting the right child of " + word + " to " + right.getWord());
+       // System.out.println("Setting the right child of " + word + " to " + right.getWord());
         this.right = right;
     }
 
